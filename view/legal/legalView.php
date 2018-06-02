@@ -19,6 +19,6 @@
 		<b>Bonjour</b>
 	<?php
 	$content = ob_get_clean();
-	include('layout.php');
+	include('../layout.php');
 
  ?>
