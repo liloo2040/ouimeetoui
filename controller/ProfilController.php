@@ -5,10 +5,10 @@ require 'model/Profil.php';
 function indexAction($pseudo, $nom, $prenom, $tag) 
 {
     
-    require('view/Profil.php');
+    require('view/Profil/ProfilView.php');
 }
 
 function editAction()
 {
-    require('view/ProfilEdit.php');
+    require('view/Profil/ProfilEdit.php');
 }

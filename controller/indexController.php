@@ -2,6 +2,6 @@
 
 function indexAction()
 {
-	require('view/indexView.php');
+	require('view/index/indexView.php');
 }
 
