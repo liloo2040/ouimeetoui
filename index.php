@@ -3,6 +3,7 @@ session_start();
 
 
 require('controller/signUpController.php');
+require('controller/legalController.php');
 // require('controller/signInController.php');
 require('controller/indexController.php');
 
@@ -17,6 +18,10 @@ try
 		else if($_GET['action'] == 'sign_in')
 		{
 			getSignInView();
+		}
+		else if($_GET['action'] == 'legal')
+		{
+			getLegalView();
 		}
 		else
 		{

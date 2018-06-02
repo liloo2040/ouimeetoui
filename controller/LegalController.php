@@ -1,8 +1,6 @@
 <?php
 
-function legalAction($parameter)
+function getLegalView()
 {
-	// votre code ici
-
-	require('view/legalView.php');
+	require('view/legal/legalView.php');
 }
