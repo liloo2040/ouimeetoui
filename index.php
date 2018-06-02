@@ -5,6 +5,7 @@ session_start();
 require('controller/signUpController.php');
 // require('controller/signInController.php');
 require('controller/indexController.php');
+require('controller/profilController.php');
 
 try
 {
@@ -17,6 +18,10 @@ try
 		else if($_GET['action'] == 'sign_in')
 		{
 			signInAction();
+		}
+		else if($_GET['action'] == 'profil')
+		{
+			profilAction();
 		}
 		else
 		{

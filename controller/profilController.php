@@ -1,8 +1,8 @@
 <?php 
 
-require 'model/Profil.php';
+//require('model/Profil.php');
 
-function indexAction($pseudo, $nom, $prenom, $tag) 
+function profilAction() 
 {
     
     require('view/Profil/ProfilView.php');

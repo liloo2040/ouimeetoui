@@ -7,7 +7,11 @@
 </head>
 <body>
 
-<form action="" method="post"></form>
+<form action="" method="post">
+avatar
+nom
+message
+<button>Valider</button></form>
     
 </body>
 </html>

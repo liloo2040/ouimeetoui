@@ -17,8 +17,8 @@ class Profil extends Manager
     $this->prenom = $prenom;
     $this->email = $email;
     $this->tag = $tag;
-
     }
+    
     public function getId() 
     {
         return $this->id;
