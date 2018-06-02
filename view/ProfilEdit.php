@@ -8,6 +8,11 @@
 <body>
 
 <h2>Edition du Profil</h2>
+<form action="">
+<input type="text">
+<button>Valider</button>
+</form>
+
     
 </body>
 </html>

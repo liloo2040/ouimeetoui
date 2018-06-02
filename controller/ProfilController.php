@@ -1,7 +1,10 @@
 <?php 
 
-function indexAction() 
+require 'model/Profil.php';
+
+function indexAction($pseudo, $nom, $prenom, $tag) 
 {
+    
     require('view/Profil.php');
 }
 
