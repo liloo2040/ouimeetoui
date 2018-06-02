@@ -9,8 +9,9 @@
 
 <form action="" method="post">
 avatar
-nom
-message
+<label for="Nom">Nom</label>
+<input type="text">
+<label for="message"></label><textarea name="" id="" cols="30" rows="10"></textarea> 
 <button>Valider</button></form>
     
 </body>
