@@ -1,17 +1,13 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aperçu du profil</title>
+    <title>Contacter un membre</title>
 </head>
 <body>
 
-<h2>Aperçu du profil</h2>
-
-<h3 class="titrePseudo"><?= $pseudo ?></h3>
-
-Editer le profil
+<form action="" method="post"></form>
     
 </body>
 </html>

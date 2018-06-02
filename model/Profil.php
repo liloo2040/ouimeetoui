@@ -1,6 +1,6 @@
 <?php
 
-class Profil 
+class Profil extends Manager
 {
     private $id;
     private $pseudo;
@@ -34,6 +34,10 @@ class Profil
     public function getPrenom()
     {
         return $this->prenom;
+    }
+    public function getEmail()
+    {
+        return $this->email;
     }
 
     public function getTag()
