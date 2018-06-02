@@ -6,15 +6,22 @@ class Profil
     private $pseudo;
     private $nom;
     private $prenom;
+    private $email;
     private $tag;
 
-    public function __construct($pseudo, $nom, $prenom, $tag)
+    public function __construct($id, $pseudo, $nom, $prenom, $email, $tag)
     {
+    $this->id = $id;
     $this->pseudo = $pseudo;
     $this->nom = $nom;
     $this->prenom = $prenom;
+    $this->email = $email;
     $this->tag = $tag;
 
+    }
+    public function getId() 
+    {
+        return $this->id;
     }
     public function getPseudo()
     {
