@@ -6,8 +6,12 @@ require('controller/signUpController.php');
 require('controller/legalController.php');
 // require('controller/signInController.php');
 require('controller/indexController.php');
+
 require('controller/eventController.php');
 require('controller/foncNonPresenteController.php');
+
+require('controller/profilController.php');
+
 
 try
 {
@@ -21,6 +25,7 @@ try
 		{
 			signInAction();
 		}
+
 		else if($_GET['action'] == 'legal')
 		{
 			getLegalView();
@@ -45,7 +50,6 @@ try
 		{
 			foncNonPresente();
 		}
-
 		else if($_GET['action'] == 'profil')
 		{
 			profilAction();
