@@ -11,12 +11,12 @@ class Profil extends Manager
 
     public function __construct($id, $pseudo, $nom, $prenom, $email, $tag)
     {
-    $this->id = $id;
-    $this->pseudo = $pseudo;
-    $this->nom = $nom;
-    $this->prenom = $prenom;
-    $this->email = $email;
-    $this->tag = $tag;
+    $this->id = 1;
+    $this->pseudo = "CM1";
+    $this->nom = "Navo";
+    $this->prenom = "Max";
+    $this->email = "max@cmagency.com";
+    $this->tag = "Community Manager";
     }
     
     public function getId() 

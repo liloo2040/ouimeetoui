@@ -5,6 +5,7 @@
 function profilAction() 
 {
     
+
     require('view/Profil/ProfilView.php');
 }
 

@@ -2,3 +2,14 @@ body
 {
 	font-family: 'Open Sans', sans-serif;
 }
+
+.editprofile{
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	border: 0;
+	padding: 10px;
+	margin-left: auto;
+	color: black;
+	background: linear-gradient(#990000,#CC0000);
+}
