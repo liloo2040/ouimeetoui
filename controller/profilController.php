@@ -5,7 +5,7 @@ function profilAction()
 {
     
     $le_profil = new ProfilManager();
-    $profil = $le_profil -> test();
+    $profil = $le_profil -> getProfil();
    
     require('view/Profil/ProfilView.php');
 }
