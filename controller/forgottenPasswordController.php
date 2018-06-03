@@ -55,7 +55,7 @@ function sendEmail()
 					$mail->isHTML(true);                                  // Set email format to HTML
 					$mail->Subject = 'Demande de réinitilisation de mot de passe';
 					ob_start(); ?>
-					<p>Vous avez fait une demande de réinitilisation de mot de passe. <br/> Vous pouvez redéfinir votre mot de passe en cliquant sur <a href="http://localhost/ouimeetoui/index.php?action=reset_password&token=<?=$token?>">ce lien</a></p>
+					<p>Vous avez fait une demande de réinitilisation de mot de passe. <br/> Vous pouvez redéfinir votre mot de passe en cliquant sur <a href="http://localhost/2_WORK/ouimeetoui/index.php?action=reset_password&token=<?=$token?>">ce lien</a></p>
 					<p>Ce lien expirera automatiquement dans 3 jours.</p>
 					<p>Si vous n'êtes pas à l'origine de cette demande, veuillez ignorer ce mail.</p>
 					<?php

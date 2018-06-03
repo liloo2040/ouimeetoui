@@ -3,14 +3,33 @@ body
 	font-family: 'Open Sans', sans-serif;
 }
 
+nav
+{
+  /*height: 60px;*/
+  color: white;
+}
+
+a b, a i
+{
+
+  color: white;
+}
+
 .menu-item
 {
 	height: 48px;
+  display: flex;
+  align-items: center;
+}
+
+ul
+{
+  
+  background: #dc3545 ;
 }
 
 nav ul > .main-menu{
   display: inline;
-  
 }
 
 nav .main-menu > li{

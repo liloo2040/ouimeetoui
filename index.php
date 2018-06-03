@@ -3,7 +3,7 @@ session_start();
 
 
 require('model/Manager.php');
-require('controller/signUpController.php');=
+require('controller/signUpController.php');
 require('controller/legalController.php');
 // require('controller/signInController.php');
 require('controller/signInController.php');
@@ -65,6 +65,7 @@ try
 		else if($_GET['action'] == 'profil')
 		{
 			profilAction();
+		}
 		else if($_GET['action'] == 'disconnect')
 		{
 			disconnect();
