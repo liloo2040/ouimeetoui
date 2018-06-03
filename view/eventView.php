@@ -38,13 +38,5 @@
         <input type="submit" value="Créer">
     </form>
 
-    <?php
-        for ($event = $events) {
-            echo $event['nom'];
-        }
-
-    
-     ?>
-
 </body>
 </html>
