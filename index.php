@@ -6,6 +6,7 @@ require('controller/signUpController.php');
 require('controller/legalController.php');
 // require('controller/signInController.php');
 require('controller/indexController.php');
+require('controller/eventController.php');
 
 try
 {
@@ -22,6 +23,14 @@ try
 		else if($_GET['action'] == 'legal')
 		{
 			getLegalView();
+		}
+		else if($_GET['action'] == 'addEvent')
+		{
+			addEvent();
+		}
+		else if($_GET['action'] == 'listEvent')
+		{
+			listEvent();
 		}
 		else
 		{
