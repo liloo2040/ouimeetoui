@@ -6,6 +6,7 @@ require('controller/signUpController.php');
 // require('controller/signInController.php');
 require('controller/indexController.php');
 require('controller/eventController.php');
+require('controller/messagerieController.php');
 
 try
 {
@@ -26,6 +27,14 @@ try
 		else if($_GET['action'] == 'listEvent')
 		{
 			listEvent();
+		}
+		else if($_GET['action'] == 'addMessage')
+		{
+			addMessage();
+		}
+		else if($_GET['action'] == 'listMessage')
+		{
+			listMessage();
 		}
 		else
 		{

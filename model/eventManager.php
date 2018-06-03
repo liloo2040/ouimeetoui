@@ -9,7 +9,7 @@ class eventManager extends Manager
 		$db = $this->dbConnect();
 		$query = $db->query('SELECT * FROM event');
 
-		return $query;
+		return $query->fetchAll();
 	}
 
 	public function addEvent($nomEvent, $descriptionEvent, $dateDEvent, $dateFEvent, $lieuEvent, $id_createur)
