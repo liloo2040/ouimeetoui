@@ -5,6 +5,7 @@ session_start();
 require('controller/signUpController.php');
 // require('controller/signInController.php');
 require('controller/indexController.php');
+require('controller/eventController.php');
 
 try
 {
@@ -17,6 +18,14 @@ try
 		else if($_GET['action'] == 'sign_in')
 		{
 			getSignInView();
+		}
+		else if($_GET['action'] == 'addEvent')
+		{
+			addEvent();
+		}
+		else if($_GET['action'] == 'listEvent')
+		{
+			listEvent();
 		}
 		else
 		{
