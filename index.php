@@ -45,6 +45,11 @@ try
 		{
 			foncNonPresente();
 		}
+
+		else if($_GET['action'] == 'profil')
+		{
+			profilAction();
+		}
 		else
 		{
 			throw new Exception("Erreur. La page demandée n'existe pas.");
