@@ -2,6 +2,7 @@
 session_start();
 
 
+require('model/Manager.php');
 require('controller/signUpController.php');
 require('controller/legalController.php');
 // require('controller/signInController.php');

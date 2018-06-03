@@ -1,6 +1,6 @@
 <?php
 
-require('Manager.php');
+// require('Manager.php');
 
 class eventManager extends Manager
 {

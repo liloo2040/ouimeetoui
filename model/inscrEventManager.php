@@ -1,5 +1,7 @@
 <?php
 
+// require('Manager.php');
+
 class inscrEventManager extends Manager
 {
 

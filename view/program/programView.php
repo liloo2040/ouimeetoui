@@ -4,6 +4,7 @@
 	ob_start();
 	?>
 		<div class="container-fluid">
+			<h1 class="text-center py-3">Liste des événements</h1>
 			<?php
 				foreach ($events as $event) {
 					?>

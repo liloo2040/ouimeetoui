@@ -7,12 +7,10 @@ ob_start();
 <div class="row justify-content-center">
 <div class="col-xs-10 offset-xs-1">
 
-<h2 class="titrePseudo"><?= $profil['pseudo'] ?></h2>
+<h2 class="titrePseudo"><?= $profil['nom'] ?> <?= $profil['prenom'] ?></h2>
 
 <p class="text-center-xs">
-<?= $profil['nom'] ?><br/>
-<?= $profil['prenom'] ?><br/>
-<?= $profil['email'] ?>
+<?= $profil['mail'] ?>
 </p>
 
 
