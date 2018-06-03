@@ -32,6 +32,10 @@ try
 		{
 			listEvent();
 		}
+		else if($_GET['action'] == 'programEvent')
+		{
+			programEvent();
+		}
 		else
 		{
 			throw new Exception("Erreur. La page demandée n'existe pas.");

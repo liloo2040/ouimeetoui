@@ -39,4 +39,12 @@ function listEvent()
 	require('view/eventView.php');
 }
 
+function programEvent()
+{
+	$eventManager = new eventManager();
+	$events = $eventManager->getEvent();
+
+	require('view/program/programView.php');
+}
+
 
