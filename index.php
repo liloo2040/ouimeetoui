@@ -7,6 +7,7 @@ require('controller/legalController.php');
 // require('controller/signInController.php');
 require('controller/indexController.php');
 require('controller/eventController.php');
+require('controller/foncNonPresenteController.php');
 
 try
 {
@@ -35,6 +36,14 @@ try
 		else if($_GET['action'] == 'programEvent')
 		{
 			programEvent();
+		}
+		else if($_GET['action'] == 'wallRencontre')
+		{
+			foncNonPresente();
+		}
+		else if($_GET['action'] == 'messagerie')
+		{
+			foncNonPresente();
 		}
 		else
 		{
