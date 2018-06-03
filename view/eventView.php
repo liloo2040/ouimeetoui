@@ -2,30 +2,55 @@
     $title = "Ouimeetoui - Événements";
     ob_start();
      ?>
-        <div class="container-fluid">
+        <div class="container-fluid pt-2">
             <form action="index.php/?action=addEvent" method="post">
+
+                <div class="form-group">
                 <label for="nomEvent">Nom</label>
-                <input type="text" name="nomEvent" id="nomEvent">
+                <input type="text" class="form-control" name="nomEvent" id="nomEvent" placeholder="Nom">
+                </div>
 
+                <div class="form-group">
                 <label for="dateDEvent">Date de début</label>
-                <input type="date" name="dateDEvent" id="dateDEvent">
+                <input type="date" class="form-control" name="dateDEvent" id="dateDEvent">
+                </div>
 
+                <div class="form-group">
+                <label for="heureDEvent">Heure de début</label>
+                <input type="time" class="form-control" name="heureDEvent" id="heureDEvent">
+                </div>
+
+                <div class="form-group">
                 <label for="dateFEvent">Date de fin</label>
-                <input type="date" name="dateFEvent" id="dateFEvent">
+                <input type="date" class="form-control" name="dateFEvent" id="dateFEvent">
+                </div>
 
+                <div class="form-group">
+                <label for="heureFEvent">Heure de fin</label>
+                <input type="time" class="form-control" name="heureFEvent" id="heureFEvent">
+                </div>
+
+                <div class="form-group">
                 <label for="descriptionEvent">Description</label>
-                <input type="text" name="descriptionEvent" id="descriptionEvent">
+                <input type="text" class="form-control" name="descriptionEvent" id="descriptionEvent">
+                </div>
 
+                <div class="form-group">
                 <label for="lieuEvent">Lieu</label>
-                <input type="text" name="lieuEvent" id="lieuEvent">
+                <input type="text" class="form-control" name="lieuEvent" id="lieuEvent">
+                </div>
 
-                <input type="submit" value="Créer">
+                 <button type="submit" class="btn btn-primary">Créer</button>
             </form>
-            <div>
+            <div class="pt-3">
                 <?php 
                     foreach ($events as $event) {
                         ?>
-                            <span><?= $event['nom'] ?> - <?= $event['date_debut'] ?> ==> <?= $event['date_fin'] ?></span>
+                            <p><b>- <?= $event['nom'] ?> </b></p>
+                            <p>Début le: <?= $event['date_debut'] ?> a <?= $event['heure_debut']?></p>
+                            <p>Fin le: <?= $event['date_fin'] ?> a <?= $event['heure_fin']?></p>
+                            
+                            <hr>
                         <?php
                     }
                  ?>
