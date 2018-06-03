@@ -15,11 +15,11 @@ try
 	{
 		if($_GET['action'] == 'sign_up')
 		{
-			getSignUpView();
+			signUpAction();
 		}
 		else if($_GET['action'] == 'sign_in')
 		{
-			getSignInView();
+			signInAction();
 		}
 		else if($_GET['action'] == 'legal')
 		{
