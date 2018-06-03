@@ -6,10 +6,27 @@ body
 .editprofile{
 	text-align: center;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 20px;
 	border: 0;
 	padding: 10px;
 	margin-left: auto;
-	color: black;
+	text-transform: uppercase;
 	background: linear-gradient(#990000,#CC0000);
+}
+
+.editprofile a:link{
+	color: rgb(88, 10, 10);
+}
+.editprofile:hover {
+	color: black;
+	font-size: 20px;
+	text-transform: uppercase;
+	transition: 0.5s color;
+}
+ 
+
+@media screen and (min-width:340px) {
+	.text-center-xs{
+		text-align: center;
+	}
+
 }
