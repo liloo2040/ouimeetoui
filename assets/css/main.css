@@ -3,6 +3,93 @@ body
 	font-family: 'Open Sans', sans-serif;
 }
 
+nav
+{
+  /*height: 60px;*/
+  color: white;
+}
+
+a b, a i
+{
+
+  color: white;
+}
+
+.menu-item
+{
+	height: 48px;
+  display: flex;
+  align-items: center;
+}
+
+ul
+{
+  
+  background: #dc3545 ;
+}
+
+nav ul > .main-menu{
+  display: inline;
+}
+
+nav .main-menu > li{
+  display: inline;
+  text-decoration: none;
+  list-style: none;
+  margin: 0 10px;
+  padding: 10px;
+}
+
+nav a{
+  /*padding: 10px; */
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  /*margin: 0 10px;*/
+}
+
+nav a:hover
+{
+	text-decoration: none;
+	color: silver;
+}
+
+#toggle-menu{
+  display: none;
+}
+
+label{
+  display: none;
+  
+}
+
+ul li a{
+	z-index: 9999;
+}
+
+
+@media screen and (max-width: 500px){
+  nav a{
+    display: block;
+  }
+  nav .main-menu > li{
+    display: inline;
+  }
+ 
+  label {
+    display: block;
+    cursor: pointer;
+      }
+  .main-menu {
+    text-align: center;
+  }
+  .main-menu{
+    display: none;
+  }
+  #toggle-menu:checked + .main-menu{
+    display: block;
+  }
+
 .editprofile{
 	text-align: center;
 	font-family: 'Open Sans', sans-serif;
